@@ -1,28 +1,38 @@
 :root {
-  --primary-color: #008746;
-  --hover-color: #04b358;
   --text-color: #fff;
 }
 
-html, body{
-    margin: 0;
+html,
+body {
+  margin: 0 auto;
 }
 
-.button_accedi {
-  background-color: var(--primary-color);
-  color: var(--text-color);
-  min-width: 248px;
-  text-align: center;
-  border: 2px solid #00000000;
-  border-radius: 4px;
-  height: 40px;
+.main_card {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: rgb(5, 151, 61);
+  background-image: url(#);
+  background-position: center;
+  background-size: cover;
+  width: 40vw;
+  min-width: 330px;
+  max-width: 600px;
+  height: 330px;
+  border-radius: 4px;
 }
 
-.button_accedi:hover {
-  background-color: var(--hover-color);
+.main_card .main_card_text {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  padding: 16px 0px 0px 16px;
+  
+}
+.main_card .main_card_text .main_card_text_title {
+    font-size: 26px;
+    margin: 0px 16px 6px 0px;
+}
+.main_card .main_card_text .main_card_text_secTitle {
+    font-size: 14px;
+    margin: 0px 56px 16px 0px;
 }
