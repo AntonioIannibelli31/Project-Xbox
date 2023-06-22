@@ -1,0 +1,19 @@
+.mostra{
+    border: transparent;
+    border-radius: 10%;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    background-color: inherit;
+    color:white;
+    padding:0;
+    
+}
+.mostra:hover{
+    background-color: rgb(180, 177, 177);
+}
+.button-mostra{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
