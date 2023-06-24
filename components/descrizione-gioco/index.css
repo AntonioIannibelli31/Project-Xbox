@@ -87,7 +87,7 @@ html {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 810px) {
   .game_description {
     flex-flow: row wrap;
     height: auto;
