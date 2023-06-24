@@ -1,0 +1,137 @@
+*{
+    margin: 0 auto;
+}
+
+.prestoNonDisponibile {
+    display: flex;
+    background-color: #2d3036;
+    height: 200px;
+    width: 110vw;
+    padding: 10px;
+}
+
+.title {
+    display: block;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin-left: 43px;
+    position: fixed;
+}
+
+.imgNonDisponibile {
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+}
+
+ol {
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+}
+
+ol > li > .gamepass {
+    align-items: flex-end;
+}
+
+.cardOmori {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-image: url(../prestoNonDisponibile/assets/omori.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.cardOlija {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-image: url(../prestoNonDisponibile/assets/olija.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+} 
+
+.cardRoad {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-image: url(../prestoNonDisponibile/assets/road96.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+} 
+
+.cardMatch {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-image: url(../prestoNonDisponibile/assets/matchpoint.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.cardResp {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-image: url(../prestoNonDisponibile/assets/respectv.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.cardEmpire {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-image: url(../prestoNonDisponibile/assets/empire.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.icona {
+    margin: 0;
+    padding-left: 7px;
+    padding-bottom: 5px;
+}
+
+.icona > img {
+    background-color: white;
+}
+
+.iconaPad {
+    margin: 0;
+    padding: 3px;
+    background-color: #000000b3;
+    border-radius: 3px;
+}
+
+/* .titleCard {
+    color: white;
+} */
+
