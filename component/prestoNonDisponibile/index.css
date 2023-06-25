@@ -1,5 +1,10 @@
 *{
     margin: 0 auto;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
 }
 
 .prestoNonDisponibile {
@@ -7,7 +12,7 @@
     background-color: #2d3036;
     height: 200px;
     width: 110vw;
-    padding: 10px;
+    padding: 5px;
 }
 
 .title {
@@ -36,10 +41,12 @@ ol > li > .gamepass {
     align-items: flex-end;
 }
 
+                                        /* card Omori */
+
 .cardOmori {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto 35px;
+    grid-template-rows: auto 20px 8px;
     background-image: url(../prestoNonDisponibile/assets/omori.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -49,10 +56,60 @@ ol > li > .gamepass {
     border-radius: 5px;
 }
 
+.iconaOmori {
+    grid-area: 2 /1 / 3 / 2;
+    margin: 0;
+    padding-left: 7px;
+    padding-bottom: 5px;
+}
+
+.iconaOmori > img {
+    background-color: white;
+}
+
+.iconaPadOmori {
+    grid-area: 2 / 3 / 4 / 4;
+    margin: 0;
+    padding: 5px;
+    background-color: #000000b3;
+    border-radius: 3px;
+}
+
+.titleCardOmori {
+    grid-area: 3 / 1 / 4 / 4;
+    margin: 0;
+    padding: 5px;
+    color: white;
+    background-color: #0000008c;
+    font-family: 'Roboto', sans-serif;
+    visibility: hidden;
+}
+
+.cardOmori:hover .iconaOmori > img  {
+    visibility: hidden;
+}
+
+.cardOmori:hover .iconaPadOmori > img  {
+    visibility: hidden;
+}
+
+.cardOmori:hover .iconaPadOmori {
+    visibility: hidden;
+}
+
+.cardOmori:hover .titleCardOmori {
+    visibility: visible;
+    margin-top: -20px;
+    transition: 0.3s;
+}
+
+
+                                       /* card Olija */
+
 .cardOlija {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto 35px;
+    grid-template-rows: auto 20px 8px;
     background-image: url(../prestoNonDisponibile/assets/olija.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -62,10 +119,59 @@ ol > li > .gamepass {
     border-radius: 5px;
 } 
 
+.iconaOlija {
+    grid-area: 2 /1 / 3 / 2;
+    margin: 0;
+    padding-left: 7px;
+    padding-bottom: 5px;
+}
+
+.iconaOlija > img {
+    background-color: white;
+}
+
+.iconaPadOlija {
+    grid-area: 2 / 3 / 4 / 4;
+    margin: 0;
+    padding: 5px;
+    background-color: #000000b3;
+    border-radius: 3px;
+}
+
+.titleCardOlija {
+    grid-area: 3 / 1 / 4 / 4;
+    margin: 0;
+    padding: 5px;
+    color: white;
+    background-color: #0000008c;
+    font-family: 'Roboto', sans-serif;
+    visibility: hidden;
+}
+
+.cardOlija:hover .iconaOlija > img {
+    visibility: hidden;
+}
+
+.cardOlija:hover .iconaPadOlija > img {
+    visibility: hidden;
+}
+
+.cardOlija:hover .iconaPadOlija {
+    visibility: hidden;
+}
+
+.cardOlija:hover .titleCardOlija {
+    visibility: visible;
+    margin-top: -20px;
+    transition: 0.3s;
+}
+
+                                         /* card Road */
+
 .cardRoad {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto 35px;
+    grid-template-rows: auto 20px 8px;
     background-image: url(../prestoNonDisponibile/assets/road96.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -75,10 +181,60 @@ ol > li > .gamepass {
     border-radius: 5px;
 } 
 
+.iconaRoad {
+    grid-area: 2 /1 / 3 / 2;
+    margin: 0;
+    padding-left: 7px;
+    padding-bottom: 5px;
+}
+
+.iconaRoad > img {
+    background-color: white;
+}
+
+.iconaPadRoad {
+    grid-area: 2 / 3 / 4 / 4;
+    margin: 0;
+    padding: 5px;
+    background-color: #000000b3;
+    border-radius: 3px;
+}
+
+.titleCardRoad {
+    grid-area: 3 / 1 / 4 / 4;
+    margin: 0;
+    padding: 5px;
+    color: white;
+    background-color: #0000008c;
+    font-family: 'Roboto', sans-serif;
+    visibility: hidden;
+}
+
+.cardRoad:hover .iconaRoad > img {
+    visibility: hidden;
+}
+
+.cardRoad:hover .iconaPadRoad > img {
+    visibility: hidden;
+}
+
+.cardRoad:hover .iconaPadRoad {
+    visibility: hidden;
+}
+
+.cardRoad:hover .titleCardRoad {
+    visibility: visible;
+    margin-top: -20px;
+    transition: 0.3s;
+}
+
+
+                                          /* card Match */
+
 .cardMatch {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto 35px;
+    grid-template-rows: auto 20px 8px;
     background-image: url(../prestoNonDisponibile/assets/matchpoint.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -88,10 +244,59 @@ ol > li > .gamepass {
     border-radius: 5px;
 }
 
+.iconaMatch {
+    grid-area: 2 /1 / 3 / 2;
+    margin: 0;
+    padding-left: 7px;
+    padding-bottom: 5px;
+}
+
+.iconaMatch > img {
+    background-color: white;
+}
+
+.iconaPadMatch {
+    grid-area: 2 / 3 / 4 / 4;
+    margin: 0;
+    padding: 5px;
+    background-color: #000000b3;
+    border-radius: 3px;
+}
+
+.titleCardMatch {
+    grid-area: 3 / 1 / 4 / 4;
+    margin: 0;
+    padding: 5px;
+    color: white;
+    background-color: #0000008c;
+    font-family: 'Roboto', sans-serif;
+    visibility: hidden;
+}
+
+.cardMatch:hover .iconaMatch > img {
+    visibility: hidden;
+}
+
+.cardMatch:hover .iconaPadMatch > img {
+    visibility: hidden;
+}
+
+.cardMatch:hover .iconaPadMatch {
+    visibility: hidden;
+}
+
+.cardMatch:hover .titleCardMatch {
+    visibility: visible;
+    margin-top: -20px;
+    transition: 0.3s;
+}
+
+                                          /* card Resp */
+
 .cardResp {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto 35px;
+    grid-template-rows: auto 20px 8px;
     background-image: url(../prestoNonDisponibile/assets/respectv.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -101,10 +306,59 @@ ol > li > .gamepass {
     border-radius: 5px;
 }
 
+.iconaResp {
+    grid-area: 2 /1 / 3 / 2;
+    margin: 0;
+    padding-left: 7px;
+    padding-bottom: 5px;
+}
+
+.iconaResp > img {
+    background-color: white;
+}
+
+.iconaPadResp {
+    grid-area: 2 / 3 / 4 / 4;
+    margin: 0;
+    padding: 5px;
+    background-color: #000000b3;
+    border-radius: 3px;
+}
+
+.titleCardResp {
+    grid-area: 3 / 1 / 4 / 4;
+    margin: 0;
+    padding: 5px;
+    color: white;
+    background-color: #0000008c;
+    font-family: 'Roboto', sans-serif;
+    visibility: hidden;
+}
+
+.cardResp:hover .iconaResp > img {
+    visibility: hidden;
+}
+
+.cardResp:hover .iconaPadResp > img {
+    visibility: hidden;
+}
+
+.cardResp:hover .iconaPadResp {
+    visibility: hidden;
+}
+
+.cardResp:hover .titleCardResp{
+    visibility: visible;
+    margin-top: -20px;
+    transition: 0.3s;
+}
+
+                                        /* card Empire */
+
 .cardEmpire {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto 35px;
+    grid-template-rows: auto 20px 8px;
     background-image: url(../prestoNonDisponibile/assets/empire.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -114,24 +368,49 @@ ol > li > .gamepass {
     border-radius: 5px;
 }
 
-.icona {
+.iconaEmpire {
+    grid-area: 2 /1 / 3 / 2;
     margin: 0;
     padding-left: 7px;
     padding-bottom: 5px;
 }
 
-.icona > img {
+.iconaEmpire > img {
     background-color: white;
 }
 
-.iconaPad {
+.iconaPadEmpire {
+    grid-area: 2 / 3 / 4 / 4;
     margin: 0;
-    padding: 3px;
+    padding: 5px;
     background-color: #000000b3;
     border-radius: 3px;
 }
 
-/* .titleCard {
+.titleCardEmpire {
+    grid-area: 3 / 1 / 4 / 4;
+    margin: 0;
+    padding: 5px;
     color: white;
-} */
+    background-color: #0000008c;
+    font-family: 'Roboto', sans-serif;
+    visibility: hidden;
+}
 
+.cardEmpire:hover .iconaEmpire > img {
+    visibility: hidden;
+}
+
+.cardEmpire:hover .iconaPadEmpire > img {
+    visibility: hidden;
+}
+
+.cardEmpire:hover .iconaPadEmpire {
+    visibility: hidden;
+}
+
+.cardEmpire:hover .titleCardEmpire{
+    visibility: visible;
+    margin-top: -20px;
+    transition: 0.3s;
+}
