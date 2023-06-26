@@ -1,12 +1,17 @@
 :root {
   --text-color: #fff;
   --size-factor: 1.5;
-  --img-url: url(#);
 }
 
 html,
 body {
   margin: 0 auto;
+}
+.main_carousel {
+  display: flex;
+  gap: 10px;
+  flex-flow: row nowrap;
+  overflow-x: scroll;
 }
 
 .main_card {
@@ -14,14 +19,14 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   background-color: rgb(5, 151, 61);
-  background-image: var(--img-url);
   background-position: center;
   background-size: cover;
   width: 40vw;
-  min-width: 310px;
+  min-width: 30vw;
   max-width: 550px;
   height: 310px;
   border-radius: 5px;
+  
 }
 
 .main_card .main_card_desc {
@@ -30,7 +35,6 @@ body {
   padding: 16px 0px 0px 16px;
   display: flex;
   flex-flow: column;
-  
 }
 .main_card .main_card_desc .main_card_desc_gpIcon {
   height: calc(37px * var(--size-factor));
