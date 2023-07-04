@@ -1,796 +1,142 @@
-@import url('common.css');
+:root {
+  --height-width: 150px;
+  --title-background: #0000008c;
+  --pad-background: #0a0b09;
+}
 
 .tuttiGiochi {
-    background-color: #1a1b1e;
-    width: 100vw;
-    padding: 10px;
-    padding-left: 40px;
-    height: 100%;
+  background-color: #1a1b1e;
+  padding: 20px;
+  padding-left: 40px;
 }
 
 .title {
-    color: white;
-    font-size: 25px;
-    padding: 0px 20px;
+  color: white;
+  font-size: 25px;
+  padding: 10px 0px;
 }
 
 .allGames {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px;
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(8, var(--height-width));
+  grid-template-rows: repeat(3, 160px);
+  gap: 1rem;
 }
 
+.elementCard {
+  width: var(--height-width);
+  height: var(--height-width);
+  display: grid;
+  align-items: flex-end;
+  grid-template-columns: var(--height-width);
+  grid-template-rows: 154px 15px;
+}
+
+.card {
+  background-image: url(assets/7DaysToDie.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: var(--height-width);
+  height: var(--height-width);
+  border-radius: 5px;
+}
 .controller {
-    grid-area: 1 / 1 / 2 / 2;
-    align-self: flex-end;
-    text-align: end;
+  grid-area: 1 / 1 / 2 / 2;
+  text-align: end;
+  margin: 0;
 }
 .controller > img {
-    background-color: #0A0B09;
-    padding: 5px;
-    margin-bottom: -3px;
-    border-radius: 5px;
+  background-color: var(--pad-background);
+  padding: 5px;
+  border-radius: 3px;
+}
+.titleCard {
+  grid-area: 2 / 1 / 3 / 2;
+  color: white;
+  visibility: hidden;
+}
+.cardContainer:hover .controller {
+  display: none;
+}
+.cardContainer:hover .titleCard {
+  grid-area: 1 / 1 / 2 / 2;
+  visibility: visible;
+  margin-bottom: +3px;
+  transition: 0.4s;
+  background-color: var(--title-background);
+  border-radius: 5px;
 }
 
-.daysToDie {
-    background-image: url(assets/7DaysToDie.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 146px;
-    grid-template-rows: 148px 15px;
-    width: 150px;
-    height: 150px;
+#card1 {
+  background-image: url(assets/7DaysToDie.png);
 }
-.titleDays {
-    grid-area: 2 / 1 / 3 / 2;
-    visibility: hidden;
+#card2 {
+  background-image: url(assets/APlagueTale.png);
 }
-.daysToDie:hover .controller {
-    display: none;
+#card3 {
+  background-image: url(assets/AgeOfEmpires.png);
 }
-.daysToDie:hover .titleDays {
-    align-self: flex-end;
-    margin-bottom: +16px;
-    visibility: visible;
-    font-size: 17px;
-    color: white;
-    background-color: #0000008c;
-    border-radius: 5px;
-    transition: 0.3s;
-    padding: 5px;
+#card4 {
+  background-image: url(assets/Amnesia.png);
 }
-
-.plagueTale {
-    background-image: url(assets/APlagueTale.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 150px;
-    height: 150px;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 144px;
-    grid-template-rows: 149px 15px;
+#card5 {
+  background-image: url(assets/AmnesiaRebirth.png);
 }
-.titleP {
-    grid-area: 2 / 1 / 3 / 2;
-    visibility: hidden;
+#card6 {
+  background-image: url(assets/TheBunker.png);
 }
-.plagueTale:hover .controller {
-    display: none;
+#card7 {
+  background-image: url(assets/AmongUs.png);
 }
-.plagueTale:hover .titleP {
-    align-self: flex-end;
-    margin-bottom: +16px;
-    visibility: visible;
-    font-size: 17px;
-    color: white;
-    background-color: #0000008c;
-    border-radius: 5px;
-    transition: 0.3s;
-    padding: 5px;
+#card8 {
+  background-image: url(assets/Anvil.png);
 }
-
-
-.ageOfEmpires {
-    background-image: url(assets/AgeOfEmpires.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 150px;
-    grid-template-rows: 151px 15px;
-    width: 150px;
-    height: 150px;
+#card9 {
+  background-image: url(assets/Aragami2.png);
 }
-.titleAge {
-    grid-area: 2 / 1 / 3 / 2;
-    visibility: hidden;
+#card10 {
+  background-image: url(assets/Ark.png);
 }
-.ageOfEmpires:hover .controller {
-    display: none;
+#card11 {
+  background-image: url(assets/AsDuskFalls.png);
 }
-.ageOfEmpires:hover .titleAge {
-    align-self: flex-end;
-    margin-bottom: +16px;
-    visibility: visible;
-    font-size: 17px;
-    color: white;
-    background-color: #0000008c;
-    border-radius: 5px;
-    transition: 0.3s;
-    padding: 5px;
+#card12 {
+  background-image: url(assets/A.C.Odyssey.png);
 }
-
-.amnesia {
-    background-image: url(assets/Amnesia.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 150px;
-    grid-template-rows: 151px 15px;
-    width: 150px;
-    height: 150px;
+#card13 {
+  background-image: url(assets/A.C.Origins.png);
 }
-.titleA {
-    grid-area: 2 / 1 / 3 / 2;
-    visibility: hidden;
+#card14 {
+  background-image: url(assets/Astroneer.png);
 }
-.amnesia:hover .controller {
-    display: none;
+#card15 {
+  background-image: url(assets/AtomicHeart.png);
 }
-.amnesia:hover .titleA {
-    align-self: flex-end;
-    margin-bottom: +16px;
-    visibility: visible;
-    font-size: 17px;
-    color: white;
-    background-color: #0000008c;
-    border-radius: 5px;
-    transition: 0.3s;
-    padding: 5px;
+#card16 {
+  background-image: url(assets/BanjoKazooieNnb.png);
 }
-
-
-.amnesiaReb {
-    background-image: url(assets/AmnesiaRebirth.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 150px;
-    grid-template-rows: 151px 15px;
-    width: 150px;
-    height: 150px;
+#card17 {
+  background-image: url(assets/BanjoKazooie.png);
 }
-.titleR {
-    grid-area: 2 / 1 / 3 / 2;
-    visibility: hidden;
+#card18 {
+  background-image: url(assets/BanjoTooie.png);
 }
-.amnesiaReb:hover .controller {
-    display: none;
+#card19 {
+  background-image: url(assets/Batman.png);
 }
-.amnesiaReb:hover .titleR {
-    align-self: flex-end;
-    margin-bottom: +16px;
-    visibility: visible;
-    font-size: 17px;
-    color: white;
-    background-color: #0000008c;
-    border-radius: 5px;
-    transition: 0.3s;
-    padding: 5px;
+#card20 {
+  background-image: url(assets/BattleField4.png);
 }
-
-
-.amnesiaT {
-    background-image: url(assets/TheBunker.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 150px;
-    grid-template-rows: 151px 15px;
-    width: 150px;
-    height: 150px;
+#card21 {
+  background-image: url(assets/Battlefield1.png);
 }
-.titleT {
-    grid-area: 2 / 1 / 3 / 2;
-    visibility: hidden;
+#card22 {
+  background-image: url(assets/Battlefield2042.png);
 }
-.amnesiaT:hover .controller {
-    display: none;
+#card23 {
+  background-image: url(assets/Battlefield5.png);
 }
-.amnesiaT:hover .titleT {
-    align-self: flex-end;
-    margin-bottom: +16px;
-    visibility: visible;
-    font-size: 17px;
-    color: white;
-    background-color: #0000008c;
-    border-radius: 5px;
-    transition: 0.3s;
-    padding: 5px;
-}
-
-
-.amongUs {
-    background-image: url(assets/AmongUs.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 150px;
-    grid-template-rows: 151px 15px;
-    width: 150px;
-    height: 150px;
-}
-.titleAmong {
-    grid-area: 2 / 1 / 3 / 2;
-    visibility: hidden;
-}
-.amongUs:hover .controller {
-    display: none;
-}
-.amongUs:hover .titleAmong {
-    align-self: flex-end;
-    margin-bottom: +16px;
-    visibility: visible;
-    font-size: 17px;
-    color: white;
-    background-color: #0000008c;
-    border-radius: 5px;
-    transition: 0.3s;
-    padding: 5px;
-}
-
-
-.anvil {
-    background-image: url(assets/Anvil.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 150px;
-    grid-template-rows: 151px 15px;
-    width: 150px;
-    height: 150px;
-}
-.titleAnvil {
-    grid-area: 2 / 1 / 3 / 2;
-    visibility: hidden;
-}
-.anvil:hover .controller {
-    display: none;
-}
-.anvil:hover .titleAnvil {
-    align-self: flex-end;
-    margin-bottom: +16px;
-    visibility: visible;
-    font-size: 17px;
-    color: white;
-    background-color: #0000008c;
-    border-radius: 5px;
-    transition: 0.3s;
-    padding: 5px;
-}
-
-
-.aragami2 {
-    background-image: url(assets/Aragami2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 150px;
-    grid-template-rows: 151px 15px;
-    width: 150px;
-    height: 150px;
-}
-.titleAragami {
-    grid-area: 2 / 1 / 3 / 2;
-    visibility: hidden;
-}
-.aragami2:hover .controller {
-    display: none;
-}
-.aragami2:hover .titleAragami {
-    align-self: flex-end;
-    margin-bottom: +16px;
-    visibility: visible;
-    font-size: 17px;
-    color: white;
-    background-color: #0000008c;
-    border-radius: 5px;
-    transition: 0.3s;
-    padding: 5px;
-}
-
-
-.ark {
-    background-image: url(assets/Ark.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 150px;
-    grid-template-rows: 151px 15px;
-    width: 150px;
-    height: 150px;
-}
-.titleArk {
-    grid-area: 2 / 1 / 3 / 2;
-    visibility: hidden;
-}
-.ark:hover .controller {
-    display: none;
-}
-.ark:hover .titleArk {
-    align-self: flex-end;
-    margin-bottom: +16px;
-    visibility: visible;
-    font-size: 17px;
-    color: white;
-    background-color: #0000008c;
-    border-radius: 5px;
-    transition: 0.3s;
-    padding: 5px;
-}
-
-
-.asDaskFalls {
-    background-image: url(assets/AsDuskFalls.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 150px;
-    grid-template-rows: 151px 15px;
-    width: 150px;
-    height: 150px;
-}
-.titleAs {
-    grid-area: 2 / 1 / 3 / 2;
-    visibility: hidden;
-}
-.asDaskFalls:hover .controller {
-    display: none;
-}
-.asDaskFalls:hover .titleAs {
-    align-self: flex-end;
-    margin-bottom: +16px;
-    visibility: visible;
-    font-size: 17px;
-    color: white;
-    background-color: #0000008c;
-    border-radius: 5px;
-    transition: 0.3s;
-    padding: 5px;
-}
-
-
-.acOdissey {
-    background-image: url(assets/A.C.Odyssey.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 150px;
-    grid-template-rows: 151px 15px;
-    width: 150px;
-    height: 150px;
-}
-.titleOd {
-    grid-area: 2 / 1 / 3 / 2;
-    visibility: hidden;
-}
-.acOdissey:hover .controller {
-    display: none;
-}
-.acOdissey:hover .titleOd {
-    align-self: flex-end;
-    margin-bottom: +16px;
-    visibility: visible;
-    font-size: 17px;
-    color: white;
-    background-color: #0000008c;
-    border-radius: 5px;
-    transition: 0.3s;
-    padding: 5px;
-}
-
-
-.acOrigins {
-    background-image: url(assets/A.C.Origins.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 150px;
-    grid-template-rows: 150px 15px;
-    width: 150px;
-    height: 150px;
-}
-.titleOr {
-    grid-area: 2 / 1 / 3 / 2;
-    visibility: hidden;
-}
-.acOrigins:hover .controller {
-    display: none;
-}
-.acOrigins:hover .titleOr {
-    align-self: flex-end;
-    margin-bottom: +16px;
-    visibility: visible;
-    font-size: 17px;
-    color: white;
-    background-color: #0000008c;
-    border-radius: 5px;
-    transition: 0.3s;
-    padding: 5px;
-}
-
-
-.astroneer {
-    background-image: url(assets/Astroneer.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 150px;
-    grid-template-rows: 150px 15px;
-    width: 150px;
-    height: 150px;
-}
-.titleAst {
-    grid-area: 2 / 1 / 3 / 2;
-    visibility: hidden;
-}
-.astroneer:hover .controller {
-    display: none;
-}
-.astroneer:hover .titleAst {
-    align-self: flex-end;
-    margin-bottom: +16px;
-    visibility: visible;
-    font-size: 17px;
-    color: white;
-    background-color: #0000008c;
-    border-radius: 5px;
-    transition: 0.3s;
-    padding: 5px;
-}
-
-
-.atomicHeart {
-    background-image: url(assets/AtomicHeart.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 150px;
-    grid-template-rows: 151px 15px;
-    width: 150px;
-    height: 150px;
-}
-.titleAtomic {
-    grid-area: 2 / 1 / 3 / 2;
-    visibility: hidden;
-}
-.atomicHeart:hover .controller {
-    display: none;
-}
-.atomicHeart:hover .titleAtomic {
-    align-self: flex-end;
-    margin-bottom: +16px;
-    visibility: visible;
-    font-size: 17px;
-    color: white;
-    background-color: #0000008c;
-    border-radius: 5px;
-    transition: 0.3s;
-    padding: 5px;
-}
-
-
-.backBlood {
-    background-image: url(assets/Back4Blood.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 148px;
-    grid-template-rows: 150px 15px;
-    width: 150px;
-    height: 150px;
-}
-.titleBack {
-    grid-area: 2 / 1 / 3 / 2;
-    visibility: hidden;
-}
-.backBlood:hover .controller {
-    display: none;
-}
-.backBlood:hover .titleBack {
-    align-self: flex-end;
-    margin-bottom: +16px;
-    visibility: visible;
-    font-size: 17px;
-    color: white;
-    background-color: #0000008c;
-    border-radius: 5px;
-    transition: 0.3s;
-    padding: 5px;
-}
-
-
-.banjoKazNnb {
-    background-image: url(assets/BanjoKazooieNnb.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 150px;
-    grid-template-rows: 151px 15px;
-    width: 150px;
-    height: 150px;
-}
-.titleBanjoN {
-    grid-area: 2 / 1 / 3 / 2;
-    visibility: hidden;
-}
-.banjoKazNnb:hover .controller {
-    display: none;
-}
-.banjoKazNnb:hover .titleBanjoN {
-    align-self: flex-end;
-    margin-bottom: +16px;
-    visibility: visible;
-    font-size: 17px;
-    color: white;
-    background-color: #0000008c;
-    border-radius: 5px;
-    transition: 0.3s;
-    padding: 5px;
-}
-
-
-.banjoKaz {
-    background-image: url(assets/BanjoKazooie.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 150px;
-    grid-template-rows: 151px 15px;
-    width: 150px;
-    height: 150px;
-}
-.titleBanjo {
-    grid-area: 2 / 1 / 3 / 2;
-    visibility: hidden;
-}
-.banjoKaz:hover .controller {
-    display: none;
-}
-.banjoKaz:hover .titleBanjo {
-    align-self: flex-end;
-    margin-bottom: +16px;
-    visibility: visible;
-    font-size: 17px;
-    color: white;
-    background-color: #0000008c;
-    border-radius: 5px;
-    transition: 0.3s;
-    padding: 5px;
-}
-
-
-.banjoTo {
-    background-image: url(assets/BanjoTooie.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 150px;
-    grid-template-rows: 151px 15px;
-    width: 150px;
-    height: 150px;
-}
-.titleBanjoT {
-    grid-area: 2 / 1 / 3 / 2;
-    visibility: hidden;
-}
-.banjoTo:hover .controller {
-    display: none;
-}
-.banjoTo:hover .titleBanjoT {
-    align-self: flex-end;
-    margin-bottom: +16px;
-    visibility: visible;
-    font-size: 17px;
-    color: white;
-    background-color: #0000008c;
-    border-radius: 5px;
-    transition: 0.3s;
-    padding: 5px;
-}
-
-
-.batman {
-    background-image: url(assets/Batman.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 150px;
-    grid-template-rows: 150px 15px;
-    width: 150px;
-    height: 150px;
-}
-.titleBatman {
-    grid-area: 2 / 1 / 3 / 2;
-    visibility: hidden;
-}
-.batman:hover .controller {
-    display: none;
-}
-.batman:hover .titleBatman {
-    align-self: flex-end;
-    margin-bottom: +16px;
-    visibility: visible;
-    font-size: 17px;
-    color: white;
-    background-color: #0000008c;
-    border-radius: 5px;
-    transition: 0.3s;
-    padding: 5px;
-}
-
-
-.battlefield4 {
-    background-image: url(assets/BattleField4.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 150px;
-    grid-template-rows: 149px 15px;
-    width: 150px;
-    height: 150px;
-}
-.titleBat4 {
-    grid-area: 2 / 1 / 3 / 2;
-    visibility: hidden;
-}
-.battlefield4:hover .controller {
-    display: none;
-}
-.battlefield4:hover .titleBat4 {
-    align-self: flex-end;
-    margin-bottom: +16px;
-    visibility: visible;
-    font-size: 17px;
-    color: white;
-    background-color: #0000008c;
-    border-radius: 5px;
-    transition: 0.3s;
-    padding: 5px;
-}
-
-
-.battlefield1 {
-    background-image: url(assets/Battlefield1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 150px;
-    grid-template-rows: 151px 15px;
-    width: 150px;
-    height: 150px;
-}
-.titleBat1 {
-    grid-area: 2 / 1 / 3 / 2;
-    visibility: hidden;
-}
-.battlefield1:hover .controller {
-    display: none;
-}
-.battlefield1:hover .titleBat1 {
-    align-self: flex-end;
-    margin-bottom: +16px;
-    visibility: visible;
-    font-size: 17px;
-    color: white;
-    background-color: #0000008c;
-    border-radius: 5px;
-    transition: 0.3s;
-    padding: 5px;
-}
-
-
-.battlefield2042 {
-    background-image: url(assets/Battlefield2042.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 150px;
-    grid-template-rows: 149px 15px;
-    width: 150px;
-    height: 150px;
-}
-.titleBat42 {
-    grid-area: 2 / 1 / 3 / 2;
-    visibility: hidden;
-}
-.battlefield2042:hover .controller {
-    display: none;
-}
-.battlefield2042:hover .titleBat42 {
-    align-self: flex-end;
-    margin-bottom: +16px;
-    visibility: visible;
-    font-size: 17px;
-    color: white;
-    background-color: #0000008c;
-    border-radius: 5px;
-    transition: 0.3s;
-    padding: 5px;
-}
-
-
-.battlefieldV {
-    background-image: url(assets/Battlefield5.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 150px;
-    grid-template-rows: 150px 15px;
-    width: 150px;
-    height: 150px;
-}
-.titleBatV {
-    grid-area: 2 / 1 / 3 / 2;
-    visibility: hidden;
-}
-.battlefieldV:hover .controller {
-    display: none;
-}
-.battlefieldV:hover .titleBatV {
-    align-self: flex-end;
-    margin-bottom: +16px;
-    visibility: visible;
-    font-size: 17px;
-    color: white;
-    background-color: #0000008c;
-    border-radius: 5px;
-    transition: 0.3s;
-    padding: 5px;
+#card24 {
+  background-image: url(assets/Back4Blood.png);
 }
