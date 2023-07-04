@@ -1,26 +1,25 @@
-.button-funzionalità{
-    width: 40%;
+.button-funzionalita {
+  width: 40%;
 }
-.funzionalità{
-    border: 1px solid black;
-    width: 160px;
-    border-radius: 20px;
-    height: 28px;
-    padding-top: 2px;
-
+.funzionalita {
+  border: 1px solid black;
+  width: 160px;
+  border-radius: 20px;
+  height: 28px;
+  padding-top: 2px;
+  padding-bottom: 4px;
 }
-.lista-funzionalità{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 5px;
-    padding-top: 10px;
-    padding-bottom: 70px;
-    text-align: center;
-    align-content: center;
+.lista-funzionalita {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding-top: 10px;
+  padding-bottom: 70px;
+  text-align: center;
+  align-items: center;
 }
-.scritta-funzionalità{
-    padding-bottom: 25px;
-    font-size: 20px;
+.scritta-funzionalita {
+  padding-bottom: 25px;
+  font-size: 20px;
 }
