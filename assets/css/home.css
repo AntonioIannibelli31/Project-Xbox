@@ -1,0 +1,52 @@
+.top_section_image{
+    background-image: url(../img/wp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    display: block;
+    left: 0;
+    width: 100vw;
+    height: 327px;
+    right: 0;
+    position: fixed;
+    margin-top: -10px;
+   width: 100vw;
+    
+}
+
+.top_section_content{
+   z-index: 9999;
+   left: 0;
+   right: 0;
+   position: fixed;
+}
+
+
+
+.nav_container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: rgba(128, 128, 128, 0.269);
+    align-items: center;
+    padding: 20px 40px;
+    padding-top: 25px;
+    
+}
+
+.navbar_right{
+    display: flex;
+    gap: 10px
+    
+}
+
+
+
+
+@media screen and (max-width: 768px){
+
+}

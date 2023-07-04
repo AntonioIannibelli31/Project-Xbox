@@ -1,16 +1,11 @@
-:root {
-  --primary-color: #008746;
-  --hover-color: #04b358;
-  --text-color: #fff;
-}
 
 html, body{
     margin: 0;
 }
 
 .button_accedi {
-  background-color: var(--primary-color);
-  color: var(--text-color);
+  background-color: #008746;
+  color: #fff;
   min-width: 248px;
   text-align: center;
   border: 2px solid #00000000;
@@ -24,5 +19,5 @@ html, body{
 }
 
 .button_accedi:hover {
-  background-color: var(--hover-color);
+  background-color: #04b358;
 }

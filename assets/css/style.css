@@ -1,8 +1,10 @@
 @import url("home.css");
 @import url("../../components/avatar/index.css");
+@import url("../../components/button-accedi/index.css");
 @import url("../../components/navbar/index.css");
 @import url("../../components/button-mostra-tutto/index.css");
 @import url("../../components/diffusi-cloud/index.css");
 @import url("../../components/searchbar/index.css");
+@import url("../../components/carousel-card-principali/index.css");
 @import url("../../common.css");
 @import url("../../");

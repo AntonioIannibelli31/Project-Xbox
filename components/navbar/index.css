@@ -1,11 +1,14 @@
 .navbar div{
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 20px;
 }   
 .gamingbeta{
     text-decoration: none;
     font-size: 15px;
+    color: white;
+    font-weight: bold;
 }
 .gamingbeta:visited{
     color: unset;
@@ -16,6 +19,8 @@
 .beta{
     background-color: white;
     color: grey;
+    font-size: 11px;
+    padding: 5px;
 }
 .logoxbox img{
     padding: 0px;
