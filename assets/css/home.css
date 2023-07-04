@@ -66,5 +66,8 @@
 .titolo-sezione-recenti {
   font-size: 25px;
 }
+.titolo-sezione-nondisponibile {
+  font-size: 25px;
+}
 @media screen and (max-width: 768px) {
 }
