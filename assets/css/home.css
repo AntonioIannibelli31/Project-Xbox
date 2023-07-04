@@ -1,4 +1,4 @@
-.top_section_image{
+/* .top_section_image{
     background-image: url(../img/wp.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,13 +16,13 @@
     margin-top: -10px;
    width: 100vw;
     
-}
+} */
 
 .top_section_content{
    z-index: 9999;
    left: 0;
    right: 0;
-   position: fixed;
+   /* position: fixed; */
 }
 
 
@@ -49,7 +49,20 @@
     flex-direction: column;
 }
 
-
+.intestazione-sezione-cloud{
+    display:flex;
+    justify-content:space-between ;
+}
+.titolo-sezione-cloud{
+    font-size: 25px;    
+}
+.titolo-game-pass{
+    font-size: 20px;
+}
+.logo-gamepass{
+    display: flex;
+    justify-content: center;
+}
 @media screen and (max-width: 768px){
 
 }
