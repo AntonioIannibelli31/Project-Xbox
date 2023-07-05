@@ -7,5 +7,10 @@
 @import url("../../components/diffusi-cloud/index.css");
 @import url("../../components/searchbar/index.css");
 @import url("../../components/carousel-card-principali/index.css");
+@import url("../../components/titolo-gioco/index.css");
+@import url("../../components/descrizione-gioco/index.css");
+@import url("../../components/funzionalita/index.css");
+@import url("../../components/informazioni-aggiuntive/index.css");
+@import url("../../components/footer/index.css");
 @import url("../../common.css");
 @import url("../../");
