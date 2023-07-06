@@ -1,4 +1,5 @@
-$padding-elementi: 48px;
+$padding-elementi: 3vw;
+$padding-elementi-mobile: 0px;
 $gap-header-text: 20px;
 $header-font-size: 23px;
 
@@ -101,7 +102,7 @@ $header-font-size: 23px;
     font-size: $header-font-size;
   }
   .contenitore-principale {
-    min-width: 460px;
+    min-width: 370px;
     color: white;
     background-color: #2d3036;
     border-radius: 4px;
@@ -253,5 +254,10 @@ $header-font-size: 23px;
     overflow-x: hidden;
   }
 }
-@media screen and (max-height: 790px) {
+@media screen and (max-width: 600px) {
+  .gameTitle_container {
+    .headerGioco {
+      padding: 0 $padding-elementi-mobile;
+    }
+  }
 }
