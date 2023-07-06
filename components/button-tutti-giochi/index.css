@@ -1,5 +1,9 @@
-html, body{
-    margin: 0;
+.buttonTuttiGiochi {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 80px;
 }
 
 .button_tutti_giochi {
@@ -15,7 +19,6 @@ html, body{
   align-items: center;
   justify-content: center;
   font-size: 14px;
-  
 }
 
 .button_tutti_giochi:hover {

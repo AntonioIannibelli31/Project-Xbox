@@ -1,0 +1,136 @@
+:root {
+  --height-width: 150px;
+  --title-background: #0000008c;
+  --pad-background: #0a0b09;
+}
+
+.title {
+  color: black;
+  font-size: 25px;
+  padding: 10px 0px;
+}
+
+.allGames {
+  display: grid;
+  grid-template-columns: repeat(8, var(--height-width));
+  grid-template-rows: repeat(3, 160px);
+  gap: 1rem;
+}
+
+.elementCard {
+  width: var(--height-width);
+  height: var(--height-width);
+  display: grid;
+  align-items: flex-end;
+  grid-template-columns: var(--height-width);
+  grid-template-rows: 154px 15px;
+}
+
+.card {
+  background-image: url(assets/7DaysToDie.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: var(--height-width);
+  height: var(--height-width);
+  border-radius: 5px;
+}
+.controller {
+  grid-area: 1 / 1 / 2 / 2;
+  text-align: end;
+  margin: 0;
+}
+.controller > img {
+  background-color: var(--pad-background);
+  padding: 5px;
+  border-radius: 3px;
+}
+.titleCard {
+  grid-area: 2 / 1 / 3 / 2;
+  color: white;
+  visibility: hidden;
+}
+.cardContainer:hover .controller {
+  display: none;
+}
+.cardContainer:hover .titleCard {
+  grid-area: 1 / 1 / 2 / 2;
+  visibility: visible;
+  margin-bottom: +3px;
+  transition: 0.4s;
+  background-color: var(--title-background);
+  border-radius: 5px;
+}
+
+#card1 {
+  background-image: url(assets/7DaysToDie.png);
+}
+#card2 {
+  background-image: url(assets/APlagueTale.png);
+}
+#card3 {
+  background-image: url(assets/AgeOfEmpires.png);
+}
+#card4 {
+  background-image: url(assets/Amnesia.png);
+}
+#card5 {
+  background-image: url(assets/AmnesiaRebirth.png);
+}
+#card6 {
+  background-image: url(assets/TheBunker.png);
+}
+#card7 {
+  background-image: url(assets/AmongUs.png);
+}
+#card8 {
+  background-image: url(assets/Anvil.png);
+}
+#card9 {
+  background-image: url(assets/Aragami2.png);
+}
+#card10 {
+  background-image: url(assets/Ark.png);
+}
+#card11 {
+  background-image: url(assets/AsDuskFalls.png);
+}
+#card12 {
+  background-image: url(assets/A.C.Odyssey.png);
+}
+#card13 {
+  background-image: url(assets/A.C.Origins.png);
+}
+#card14 {
+  background-image: url(assets/Astroneer.png);
+}
+#card15 {
+  background-image: url(assets/AtomicHeart.png);
+}
+#card16 {
+  background-image: url(assets/BanjoKazooieNnb.png);
+}
+#card17 {
+  background-image: url(assets/BanjoKazooie.png);
+}
+#card18 {
+  background-image: url(assets/BanjoTooie.png);
+}
+#card19 {
+  background-image: url(assets/Batman.png);
+}
+#card20 {
+  background-image: url(assets/BattleField4.png);
+}
+#card21 {
+  background-image: url(assets/Battlefield1.png);
+}
+#card22 {
+  background-image: url(assets/Battlefield2042.png);
+}
+#card23 {
+  background-image: url(assets/Battlefield5.png);
+}
+#card24 {
+  background-image: url(assets/Back4Blood.png);
+}
