@@ -1,8 +1,10 @@
-$padding-elementi: 80px;
+$padding-elementi: 48px;
+$gap-header-text: 20px;
+$header-font-size: 23px;
 
 .gamePage {
   background-color: #1a1b1e;
-  height: 100%;
+  height: auto;
   display: flex;
   gap: 5vh;
   flex-flow: column nowrap;
@@ -68,13 +70,13 @@ $padding-elementi: 80px;
 .gameDescription_container {
   padding: 0 $padding-elementi;
   display: flex;
-  gap: 10px;
+  gap: $gap-header-text;
   flex-flow: column nowrap;
   margin-top: auto;
 
   .gameDescription_header {
     color: white;
-    font-size: 23px;
+    font-size: $header-font-size;
   }
   .gameDescription_text {
     .game_description_text {
@@ -82,40 +84,84 @@ $padding-elementi: 80px;
     }
   }
 }
+.lingueSupportate_container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: $gap-header-text;
+  padding: 0 $padding-elementi;
+  .lingueSupportate_header {
+    color: white;
+    font-size: $header-font-size;
+  }
+  .contenitore-principale {
+    min-width: 460px;
+    color: white;
+    background-color: #2d3036;
+    border-radius: 4px;
+
+    .contenitore-lingue {
+      margin-left: 0;
+      height: auto;
+      padding: 16px;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+
+      section {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        gap: 10px;
+
+        .singola-lingua {
+          border-bottom: 1px solid #ffffff25;
+          font-size: 14px;
+        }
+      }
+    }
+    .mostra-piu {
+      font-size: 16px;
+      text-transform: uppercase;
+      padding-top: 8px;
+    }
+  }
+}
 
 .funzionalita_container {
   display: flex;
   flex-flow: column nowrap;
-  gap: 10px;
+  gap: $gap-header-text;
   padding: 0 $padding-elementi;
 
   .funzionalita_header {
     color: white;
-    font-size: 23px;
+    font-size: $header-font-size;
   }
 
   .funzionalita_text {
   }
 }
+.funzionalita_container {
+  .button-funzionalita {
+    background-color: #2d3036;
+    min-width: 230px;
+    width: 50%;
 
-.button-funzionalita {
-  background-color: #2d3036;
-  min-width: 230px;
-
-  border-radius: 4px;
-  padding: 10px;
-  &:hover {
-    filter: brightness(1.1);
-    background-color: #42454a;
-  }
-  .lista-funzionalita {
-    gap: 15px;
-    .funzionalita {
-      padding: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 40px;
+    border-radius: 4px;
+    padding: 10px;
+    &:hover {
+      filter: brightness(1.1);
+      background-color: #42454a;
+    }
+    .lista-funzionalita {
+      gap: 15px;
+      .funzionalita {
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 40px;
+      }
     }
   }
 }

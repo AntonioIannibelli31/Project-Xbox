@@ -1,6 +1,6 @@
 .gamePage {
   background-color: #1a1b1e;
-  height: 100%;
+  height: auto;
   display: flex;
   gap: 5vh;
   flex-flow: column nowrap;
@@ -26,7 +26,7 @@
 }
 .main_gamePage_section .gameTitle_container .headerGioco {
   padding: 0;
-  padding: 0 80px;
+  padding: 0 48px;
 }
 .main_gamePage_section .gameTitle_container .headerGioco .containerTitleAndSubtitleAndButtons {
   grid-area: 2/1/3/4;
@@ -44,9 +44,9 @@
 }
 
 .gameDescription_container {
-  padding: 0 80px;
+  padding: 0 48px;
   display: flex;
-  gap: 10px;
+  gap: 20px;
   flex-flow: column nowrap;
   margin-top: auto;
 }
@@ -58,30 +58,71 @@
   overflow: hidden;
 }
 
+.lingueSupportate_container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+  padding: 0 48px;
+}
+.lingueSupportate_container .lingueSupportate_header {
+  color: white;
+  font-size: 23px;
+}
+.lingueSupportate_container .contenitore-principale {
+  min-width: 460px;
+  color: white;
+  background-color: #2d3036;
+  border-radius: 4px;
+}
+.lingueSupportate_container .contenitore-principale .contenitore-lingue {
+  margin-left: 0;
+  height: auto;
+  padding: 16px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+.lingueSupportate_container .contenitore-principale .contenitore-lingue section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+.lingueSupportate_container .contenitore-principale .contenitore-lingue section .singola-lingua {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1450980392);
+  font-size: 14px;
+}
+.lingueSupportate_container .contenitore-principale .mostra-piu {
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-top: 8px;
+}
+
 .funzionalita_container {
   display: flex;
   flex-flow: column nowrap;
-  gap: 10px;
-  padding: 0 80px;
+  gap: 20px;
+  padding: 0 48px;
 }
 .funzionalita_container .funzionalita_header {
   color: white;
   font-size: 23px;
 }
-.button-funzionalita {
+.funzionalita_container .button-funzionalita {
   background-color: #2d3036;
   min-width: 230px;
+  width: 50%;
   border-radius: 4px;
   padding: 10px;
 }
-.button-funzionalita:hover {
+.funzionalita_container .button-funzionalita:hover {
   filter: brightness(1.1);
   background-color: #42454a;
 }
-.button-funzionalita .lista-funzionalita {
+.funzionalita_container .button-funzionalita .lista-funzionalita {
   gap: 15px;
 }
-.button-funzionalita .lista-funzionalita .funzionalita {
+.funzionalita_container .button-funzionalita .lista-funzionalita .funzionalita {
   padding: 8px;
   display: flex;
   align-items: center;
@@ -91,7 +132,7 @@
 
 .informazioniAggiunitve_container {
   color: white;
-  padding: 0 80px;
+  padding: 0 48px;
 }
 .informazioniAggiunitve_container .info-aggiuntive .titolo-link-aggiuntivi {
   font-size: 20px;
