@@ -1,29 +1,25 @@
-* {
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
 a {
   text-decoration: none;
 }
 
 .prestoNonDisponibile {
   display: flex;
+  flex-direction: column;
   height: 200px;
-  width: 100vw;
-  padding: 5px;
+  width: 100%;
+  gap: 1rem;
+  margin-bottom: 50px;
 }
 
 .titolo-sezione-nondisponibile {
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  margin-left: 43px;
+  margin-top: 30px;
 }
 
 .imgNonDisponibile {
   display: flex;
   align-items: flex-end;
   margin: 0;
+  /* overflow-x: scroll; */
 }
 
 ol {

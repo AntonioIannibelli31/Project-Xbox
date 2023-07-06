@@ -3,10 +3,11 @@
   grid-template-columns: repeat(8, 1fr);
   gap: 16px;
   flex-wrap: wrap;
-  margin: 0px 30px;
+  margin-bottom: 50px;
 }
 .etichetta-generi {
   font-size: 25px;
+  margin-bottom: 10px;
 }
 .genere {
   display: flex;
