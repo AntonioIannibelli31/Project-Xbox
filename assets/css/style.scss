@@ -1,0 +1,145 @@
+div {
+  .conteiner1 {
+    display: flex;
+    flex-direction: column;
+    .container-first-section {
+      .top_section_content {
+        z-index: 9999;
+        left: 0;
+        right: 0;
+        background-image: url(../img/wp.jpg);
+        width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-left: 4%;
+        .nav_container {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+          align-items: center;
+          padding-right: 20px;
+          padding-top: 25px;
+          padding-bottom: 20px;
+          .navbar_right {
+            display: flex;
+            gap: 10px;
+          }
+        }
+      }
+    }
+    .cloud-container {
+      padding-top: 40px;
+      padding-bottom: 50px;
+      background-color: #1a1b1e;
+      padding-left: 4%;
+      .intestazione-sezione-cloud {
+        display: flex;
+        justify-content: space-between;
+        .titolo-sezione-cloud {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    .containerGreen {
+      background-image: linear-gradient(#143929, #1a1b1e);
+      padding-left: 4%;
+      .logo-gamepass {
+        display: flex;
+        justify-content: center;
+      }
+      .aggiunti-recente-container {
+        .intestazione-sezione-recenti {
+          display: flex;
+          justify-content: space-between;
+          .titolo-sezione-recenti {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+
+    .containerBlack {
+      background-color: #1a1b1e;
+      padding-left: 4%;
+      .prestoNonDisponibile {
+        .titolo-sezione-nondisponibile {
+          font-size: 25px;
+        }
+      }
+      .generi {
+        .lista-generi {
+          padding-right: 4%;
+        }
+      }
+      .tuttiGiochi {
+        padding-right: 4%;
+        .intestazione-sezione-giochi {
+          display: flex;
+          justify-content: space-between;
+          .titolo-sezione-giochi {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1980px) {
+  .tuttiGiochi {
+    .allGames {
+      grid-template-columns: repeat(10, 160px);
+      grid-template-rows: repeat(3, 160px);
+      gap: 12px;
+    }
+  }
+}
+@media screen and (max-width: 1365px) {
+  .tuttiGiochi {
+    .allGames {
+      grid-template-columns: repeat(8, 160px);
+      grid-template-rows: repeat(3, 160px);
+      gap: 5px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .tuttiGiochi {
+    .allGames {
+      grid-template-columns: repeat(4, 150px);
+      grid-template-rows: repeat(6, 160px);
+      gap: 1rem;
+      padding-left: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar_right {
+    .button_accedi {
+      display: none;
+    }
+  }
+  .generi {
+    .lista-generi {
+      .genere {
+        max-width: 600px;
+      }
+    }
+  }
+  .tuttiGiochi {
+    margin: 0;
+    .allGames {
+      grid-template-columns: repeat(3, 140px);
+      grid-template-rows: repeat(8, 160px);
+      gap: 15px;
+      padding-left: 0;
+    }
+  }
+}

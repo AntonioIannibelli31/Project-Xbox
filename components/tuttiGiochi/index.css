@@ -12,8 +12,8 @@
 
 .allGames {
   display: grid;
-  grid-template-columns: repeat(8, var(--height-width));
-  grid-template-rows: repeat(3, 160px);
+  grid-template-columns: repeat(12, var(--height-width));
+  grid-template-rows: repeat(2, 160px);
   gap: 1rem;
 }
 

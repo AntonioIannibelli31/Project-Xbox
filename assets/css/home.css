@@ -1,28 +1,13 @@
-/* .top_section_image{
-    background-image: url(../img/wp.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    filter: blur(8px);
-    z-index: 1;
-    width: 100%;
-    height: auto;
-    display: block;
-    left: 0;
-    width: 100vw;
-    height: 327px;
-    right: 0;
-    position: fixed;
-    margin-top: -10px;
-   width: 100vw;
-    
-} */
-
 .top_section_content {
   z-index: 9999;
   left: 0;
   right: 0;
-  /* position: fixed; */
+  background-image: url(../img/wp.jpg);
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .nav_container {
@@ -44,6 +29,11 @@
   display: flex;
   flex-direction: column;
 }
+.cloud-container {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  background-color: #1a1b1e;
+}
 
 .intestazione-sezione-cloud {
   display: flex;
@@ -51,9 +41,17 @@
 }
 .titolo-sezione-cloud {
   font-size: 25px;
+  color: white;
 }
-.titolo-game-pass {
-  font-size: 20px;
+.container2 {
+  display: flex;
+  flex-direction: column;
+}
+.containerGreen {
+  background-image: linear-gradient(#143929, #1a1b1e);
+}
+.containerBlack {
+  background-color: #1a1b1e;
 }
 .logo-gamepass {
   display: flex;
@@ -65,9 +63,23 @@
 }
 .titolo-sezione-recenti {
   font-size: 25px;
+  color: white;
 }
 .titolo-sezione-nondisponibile {
   font-size: 25px;
+  color: white;
 }
+.etichetta-generi {
+  color: white;
+}
+.intestazione-sezione-giochi {
+  display: flex;
+  justify-content: space-between;
+}
+.titolo-sezione-giochi {
+  font-size: 25px;
+  color: white;
+}
+
 @media screen and (max-width: 768px) {
 }

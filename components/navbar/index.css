@@ -1,49 +1,47 @@
-.navbar div{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-}   
-.gamingbeta{
-    text-decoration: none;
-    font-size: 15px;
-    color: white;
-    font-weight: bold;
+.navbar div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
 }
-.gamingbeta:visited{
-    color: unset;
+.gamingbeta {
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
 }
-.gamingbeta:hover{
-    background-color:  grey;
+.gamingbeta:visited {
+  color: unset;
 }
-.beta{
-    background-color: white;
-    color: grey;
-    font-size: 11px;
-    padding: 5px;
+.gamingbeta:hover {
+  background-color: #515863;
+  width: 160px;
+  padding: 10px 0;
 }
-.logoxbox img{
-    padding: 0px;
-    margin:0px;
-    width: 40px;
-    height: 40px;
+.beta {
+  background-color: white;
+  color: grey;
+  font-size: 11px;
+  padding: 5px;
 }
- .logoxbox:hover{
-    background-color: grey;
-    border-radius: 50%;
+.logoxbox img {
+  padding: 0px;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
 }
-.logoxbox{
-    background-color: inherit;
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 100%;
+.logoxbox:hover {
+  background-color: #515863;
+  border-radius: 47%;
 }
-.navbar{
-    padding-left: 15px;
-    background-color: rgba(10, 10, 10, 0);
+.logoxbox {
+  background-color: inherit;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100%;
 }
-.gamingbeta h1{
-    font-size: 14px;
+.gamingbeta h1 {
+  font-size: 14px;
 }

@@ -1,5 +1,4 @@
 :root {
- 
   --v-card-height: 260px;
   --v-card-width: 175px;
   --v-card-contorller-size-factor: 1;
@@ -10,18 +9,16 @@ body {
   margin: 0 auto;
 }
 
-.carousel_container{
+.carousel_container {
   display: flex;
   gap: 10px;
   flex-flow: row nowrap;
   overflow-x: scroll;
   margin-top: 10px;
-  
 }
 
-.vertical_card_container{
+.vertical_card_container {
   text-decoration: none;
-
 }
 
 .vertical_card {
@@ -73,13 +70,33 @@ body {
   transform: translateY(0px);
 }
 
-#vertical_card_recente_1{background-image: url(img/Screenshot\ 2023-06-17\ 164130.png);}
-#vertical_card_recente_2{background-image: url(img/Screenshot\ 2023-06-17\ 164200.png);}
-#vertical_card_recente_3{background-image: url(img/Screenshot\ 2023-06-17\ 164219.png);}
-#vertical_card_recente_4{background-image: url(img/Screenshot\ 2023-06-17\ 164240.png);}
-#vertical_card_recente_5{background-image: url(img/Screenshot\ 2023-06-17\ 164306.png);}
-#vertical_card_recente_6{background-image: url(img/Screenshot\ 2023-06-17\ 164330.png);}
-#vertical_card_recente_7{background-image: url(img/Screenshot\ 2023-06-17\ 164359.png);}
-#vertical_card_recente_8{background-image: url(img/Screenshot\ 2023-06-17\ 164539.png);}
-#vertical_card_recente_9{background-image: url(img/Screenshot\ 2023-06-17\ 164956.png);}
-#vertical_card_recente_10{background-image: url(img/Screenshot\ 2023-06-17\ 165021.png);}
+#vertical_card_recente_1 {
+  background-image: url(img/Screenshot\ 2023-06-17\ 164130.png);
+}
+#vertical_card_recente_2 {
+  background-image: url(img/Screenshot\ 2023-06-17\ 164200.png);
+}
+#vertical_card_recente_3 {
+  background-image: url(img/Screenshot\ 2023-06-17\ 164219.png);
+}
+#vertical_card_recente_4 {
+  background-image: url(img/Screenshot\ 2023-06-17\ 164240.png);
+}
+#vertical_card_recente_5 {
+  background-image: url(img/Screenshot\ 2023-06-17\ 164306.png);
+}
+#vertical_card_recente_6 {
+  background-image: url(img/Screenshot\ 2023-06-17\ 164330.png);
+}
+#vertical_card_recente_7 {
+  background-image: url(img/Screenshot\ 2023-06-17\ 164359.png);
+}
+#vertical_card_recente_8 {
+  background-image: url(img/Screenshot\ 2023-06-17\ 164539.png);
+}
+#vertical_card_recente_9 {
+  background-image: url(img/Screenshot\ 2023-06-17\ 164956.png);
+}
+#vertical_card_recente_10 {
+  background-image: url(img/Screenshot\ 2023-06-17\ 165021.png);
+}
