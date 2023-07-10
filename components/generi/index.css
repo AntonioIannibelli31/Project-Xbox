@@ -1,7 +1,8 @@
 .lista-generi {
   display: flex;
-  gap: 16px;
+  gap: 27px;
   margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 .etichetta-generi {
   font-size: 25px;
@@ -12,7 +13,7 @@
   flex-direction: column;
   border-radius: 4px;
   height: 96px;
-  width: 100%;
+  width: 11%;
   text-decoration: none;
   justify-content: space-between;
 }

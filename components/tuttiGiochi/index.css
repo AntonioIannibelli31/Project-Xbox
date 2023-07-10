@@ -12,9 +12,9 @@
 
 .allGames {
   display: grid;
-  grid-template-columns: repeat(12, var(--height-width));
-  grid-template-rows: repeat(2, 160px);
-  gap: 1rem;
+  grid-template-columns: repeat(10, var(--height-width));
+  grid-template-rows: repeat(3, 160px);
+  gap: 27px;
 }
 
 .elementCard {

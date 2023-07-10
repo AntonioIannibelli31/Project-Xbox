@@ -79,7 +79,7 @@ div {
         }
       }
       .tuttiGiochi {
-        padding-right: 4%;
+        // padding-right: 4%;
         .intestazione-sezione-giochi {
           display: flex;
           justify-content: space-between;
@@ -94,9 +94,16 @@ div {
 @media screen and (min-width: 1980px) {
   .tuttiGiochi {
     .allGames {
-      grid-template-columns: repeat(10, 160px);
+      grid-template-columns: repeat(11, 160px);
       grid-template-rows: repeat(3, 160px);
-      gap: 12px;
+      gap: 5px;
+    }
+  }
+  .generi {
+    .lista-generi {
+      .genere {
+        width: 11%;
+      }
     }
   }
 }
@@ -108,6 +115,13 @@ div {
       gap: 5px;
     }
   }
+  .generi {
+    .lista-generi {
+      .genere {
+        width: 23%;
+      }
+    }
+  }
 }
 @media screen and (max-width: 768px) {
   .tuttiGiochi {
@@ -116,6 +130,13 @@ div {
       grid-template-rows: repeat(6, 160px);
       gap: 1rem;
       padding-left: 20px;
+    }
+  }
+  .generi {
+    .lista-generi {
+      .genere {
+        width: 22%;
+      }
     }
   }
 }
@@ -129,7 +150,7 @@ div {
   .generi {
     .lista-generi {
       .genere {
-        max-width: 600px;
+        width: 28%;
       }
     }
   }

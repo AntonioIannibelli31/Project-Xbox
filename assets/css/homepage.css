@@ -69,9 +69,6 @@ div .container2 .containerBlack .prestoNonDisponibile .titolo-sezione-nondisponi
 div .container2 .containerBlack .generi .lista-generi {
   padding-right: 4%;
 }
-div .container2 .containerBlack .tuttiGiochi {
-  padding-right: 4%;
-}
 div .container2 .containerBlack .tuttiGiochi .intestazione-sezione-giochi {
   display: flex;
   justify-content: space-between;
@@ -82,9 +79,12 @@ div .container2 .containerBlack .tuttiGiochi .intestazione-sezione-giochi .titol
 
 @media screen and (min-width: 1980px) {
   .tuttiGiochi .allGames {
-    grid-template-columns: repeat(10, 160px);
+    grid-template-columns: repeat(11, 160px);
     grid-template-rows: repeat(3, 160px);
-    gap: 12px;
+    gap: 5px;
+  }
+  .generi .lista-generi .genere {
+    width: 11%;
   }
 }
 @media screen and (max-width: 1365px) {
@@ -92,6 +92,9 @@ div .container2 .containerBlack .tuttiGiochi .intestazione-sezione-giochi .titol
     grid-template-columns: repeat(8, 160px);
     grid-template-rows: repeat(3, 160px);
     gap: 5px;
+  }
+  .generi .lista-generi .genere {
+    width: 23%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -101,13 +104,16 @@ div .container2 .containerBlack .tuttiGiochi .intestazione-sezione-giochi .titol
     gap: 1rem;
     padding-left: 20px;
   }
+  .generi .lista-generi .genere {
+    width: 22%;
+  }
 }
 @media screen and (max-width: 480px) {
   .navbar_right .button_accedi {
     display: none;
   }
   .generi .lista-generi .genere {
-    max-width: 600px;
+    width: 28%;
   }
   .tuttiGiochi {
     margin: 0;
