@@ -19,9 +19,12 @@
 }
 
 .img-genere {
-  display: flex;
+  /* display: flex; */
   justify-content: flex-end;
   align-items: flex-start;
+}
+.img-genere svg {
+  float: right;
 }
 
 .singolo-genere {
