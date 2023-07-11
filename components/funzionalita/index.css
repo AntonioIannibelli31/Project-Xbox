@@ -1,0 +1,28 @@
+.button-funzionalita {
+  width: 40%;
+}
+.funzionalita {
+  color: white;
+  border: 1px solid white;
+  text-align: center;
+  min-width: 160px;
+  width: auto;
+  border-radius: 20px;
+  min-height: 30px;
+  height: 28px;
+  padding: 8px;
+}
+.lista-funzionalita {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding-top: 10px;
+  padding-bottom: 70px;
+  text-align: center;
+  align-items: center;
+}
+.scritta-funzionalita {
+  padding-bottom: 25px;
+  font-size: 20px;
+}

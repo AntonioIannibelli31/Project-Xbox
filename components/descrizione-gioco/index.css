@@ -1,0 +1,104 @@
+body,
+html {
+  margin: 0 auto;
+}
+.game_description_container{
+  z-index: 100;
+}
+.game_description_container:hover .game_description{
+  background-color: #42454a;
+  
+}
+.game_description_container:hover .game_description img{
+  filter: brightness(1.1);
+  
+}
+
+.game_description {
+  z-index: 1;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  background-color: #2d3036;
+  color: white;
+  border-radius: 4px;
+  height: 234px;
+  font-family: "Roboto", sans-serif;
+}
+
+.game_description_text {
+  margin-right: 16px;
+  padding: 16px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+  max-width: 700px;
+  flex: 0 2 700px;
+  font-weight: 200;
+}
+
+.more_details {
+  align-self: flex-start;
+  font-weight: bold;
+}
+.more_details:hover {
+  cursor: pointer;
+}
+
+.game_description_image {
+}
+.game_description_image img {
+  height: 234px;
+}
+
+.game_description_credits {
+  width: 15vw;
+  padding: 16px;
+  flex-grow: 1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: stretch;
+  gap: 20px;
+  overflow: hidden;
+  flex: 1 1 300px;
+}
+
+.game_description_credit {
+  display: flex;
+  flex-flow: column;
+}
+
+.credit_title {
+  font-size: 14px;
+  font-weight: bold;
+  word-break: keep-all;
+}
+
+.credit_description {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1320px) {
+  .game_description_credits {
+    flex-flow: column;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .game_description {
+    flex-flow: row wrap;
+    height: auto;
+  }
+  .game_description_credits {
+    order: 1;
+    flex: 1;
+  }
+  .game_description_text {
+    order: 2;
+    flex-grow: 1;
+    align-self: flex-start;
+  }
+}
