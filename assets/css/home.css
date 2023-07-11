@@ -39,6 +39,9 @@
   padding: 20px 40px;
   padding-top: 25px;
 }
+.nav_container .navbar_right .soloLente {
+  display: none;
+}
 
 .navbar_right {
   display: flex;
@@ -100,6 +103,17 @@
   font-size: 25px;
   color: white;
 }
-
 @media screen and (max-width: 768px) {
+  .nav_container .navbar_right .searchbar {
+    display: none;
+  }
+  .nav_container .navbar_right .soloLente {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nav_container .button_accedi {
+    display: none;
+  }
 }
