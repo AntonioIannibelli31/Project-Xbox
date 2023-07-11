@@ -106,8 +106,9 @@
 }
 
 .flickity-page-dots {
+  display: flex;
+  justify-content: center;
   bottom: 0px;
-  left: 35vw;
 }
 /* white circles */
 .flickity-page-dots .dot {
