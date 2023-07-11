@@ -110,6 +110,11 @@
   justify-content: center;
   bottom: 0px;
 }
+.gallery .flickity-page-dots {
+  display: none;
+  justify-content: center;
+  bottom: 0px;
+}
 /* white circles */
 .flickity-page-dots .dot {
   width: 12px;
@@ -123,6 +128,7 @@
   background: white;
 }
 .gallery-cell {
+  margin-right: 15px;
 }
 
 @media screen and (max-width: 768px) {

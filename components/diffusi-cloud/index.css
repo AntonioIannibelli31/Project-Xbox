@@ -1,5 +1,4 @@
 :root {
- 
   --v-card-height: 260px;
   --v-card-width: 175px;
   --v-card-contorller-size-factor: 1;
@@ -10,18 +9,8 @@ body {
   margin: 0 auto;
 }
 
-.carousel_container{
-  display: flex;
-  gap: 10px;
-  flex-flow: row nowrap;
-  overflow-x: scroll;
-  margin-top: 10px;
-  
-}
-
-.vertical_card_container{
+.vertical_card_container {
   text-decoration: none;
-
 }
 
 .vertical_card {
@@ -73,13 +62,33 @@ body {
   transform: translateY(0px);
 }
 
-#vertical_card_cloud_1{background-image: url(img/fortnite.png);}
-#vertical_card_cloud_2{background-image: url(img/acodyssey.png);}
-#vertical_card_cloud_3{background-image: url(img/battlefield.png);}
-#vertical_card_cloud_4{background-image: url(img/flightsim.png);}
-#vertical_card_cloud_5{background-image: url(img/forzahorizon.png);}
-#vertical_card_cloud_6{background-image: url(img/grounded.png);}
-#vertical_card_cloud_7{background-image: url(img/halo.png);}
-#vertical_card_cloud_8{background-image: url(img/mortalkombat.png);}
-#vertical_card_cloud_9{background-image: url(img/rsixsiege.png);}
-#vertical_card_cloud_10{background-image: url(img/seaofthieves.png);}
+#vertical_card_cloud_1 {
+  background-image: url(img/fortnite.png);
+}
+#vertical_card_cloud_2 {
+  background-image: url(img/acodyssey.png);
+}
+#vertical_card_cloud_3 {
+  background-image: url(img/battlefield.png);
+}
+#vertical_card_cloud_4 {
+  background-image: url(img/flightsim.png);
+}
+#vertical_card_cloud_5 {
+  background-image: url(img/forzahorizon.png);
+}
+#vertical_card_cloud_6 {
+  background-image: url(img/grounded.png);
+}
+#vertical_card_cloud_7 {
+  background-image: url(img/halo.png);
+}
+#vertical_card_cloud_8 {
+  background-image: url(img/mortalkombat.png);
+}
+#vertical_card_cloud_9 {
+  background-image: url(img/rsixsiege.png);
+}
+#vertical_card_cloud_10 {
+  background-image: url(img/seaofthieves.png);
+}
