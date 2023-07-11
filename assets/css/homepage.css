@@ -6,7 +6,7 @@ div .conteiner1 .container-first-section .top_section_content {
   z-index: 9999;
   left: 0;
   right: 0;
-  background-image: url(../img/wp.jpg);
+  background-image: url(../img/wpBlur.png);
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -23,7 +23,12 @@ div .conteiner1 .container-first-section .top_section_content .nav_container {
   padding-top: 25px;
   padding-bottom: 20px;
 }
-div .conteiner1 .container-first-section .top_section_content .nav_container .navbar_right {
+div
+  .conteiner1
+  .container-first-section
+  .top_section_content
+  .nav_container
+  .navbar_right {
   display: flex;
   gap: 10px;
 }
@@ -37,7 +42,11 @@ div .conteiner1 .cloud-container .intestazione-sezione-cloud {
   display: flex;
   justify-content: space-between;
 }
-div .conteiner1 .cloud-container .intestazione-sezione-cloud .titolo-sezione-cloud {
+div
+  .conteiner1
+  .cloud-container
+  .intestazione-sezione-cloud
+  .titolo-sezione-cloud {
   font-size: 25px;
 }
 div .container2 {
@@ -52,18 +61,31 @@ div .container2 .containerGreen .logo-gamepass {
   display: flex;
   justify-content: center;
 }
-div .container2 .containerGreen .aggiunti-recente-container .intestazione-sezione-recenti {
+div
+  .container2
+  .containerGreen
+  .aggiunti-recente-container
+  .intestazione-sezione-recenti {
   display: flex;
   justify-content: space-between;
 }
-div .container2 .containerGreen .aggiunti-recente-container .intestazione-sezione-recenti .titolo-sezione-recenti {
+div
+  .container2
+  .containerGreen
+  .aggiunti-recente-container
+  .intestazione-sezione-recenti
+  .titolo-sezione-recenti {
   font-size: 25px;
 }
 div .container2 .containerBlack {
   background-color: #1a1b1e;
   padding-left: 4%;
 }
-div .container2 .containerBlack .prestoNonDisponibile .titolo-sezione-nondisponibile {
+div
+  .container2
+  .containerBlack
+  .prestoNonDisponibile
+  .titolo-sezione-nondisponibile {
   font-size: 25px;
 }
 div .container2 .containerBlack .generi .lista-generi {
@@ -73,7 +95,12 @@ div .container2 .containerBlack .tuttiGiochi .intestazione-sezione-giochi {
   display: flex;
   justify-content: space-between;
 }
-div .container2 .containerBlack .tuttiGiochi .intestazione-sezione-giochi .titolo-sezione-giochi {
+div
+  .container2
+  .containerBlack
+  .tuttiGiochi
+  .intestazione-sezione-giochi
+  .titolo-sezione-giochi {
   font-size: 25px;
 }
 
