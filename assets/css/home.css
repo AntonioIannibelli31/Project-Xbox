@@ -38,6 +38,7 @@
   align-items: center;
   padding: 20px 40px;
   padding-top: 25px;
+  padding-left: 0;
 }
 .nav_container .navbar_right .soloLente {
   display: none;
@@ -103,6 +104,26 @@
   font-size: 25px;
   color: white;
 }
+
+.flickity-page-dots {
+  bottom: 0px;
+  left: 35vw;
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
+.gallery-cell {
+}
+
 @media screen and (max-width: 768px) {
   .nav_container .navbar_right .searchbar {
     display: none;

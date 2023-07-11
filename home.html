@@ -7,6 +7,7 @@
   <title>Xbox Cloud Gaming (beta) su  Xbox.com</title>
   <link rel="stylesheet" href="common.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 
 <body>
@@ -45,12 +46,14 @@
               </button>
             </div>
           </div>
-          <div class="main_carousel">
-            <div class="main_card" id="main_card_1">
+          <div class="main_carousel main-gallery js-flickity"
+            data-flickity-options='{ "cellAlign": "left", "contain": true }'>
+            <div class="main_card gallery-cell" id="main_card_1">
               <div class="main_card_desc">
                 <div class="main_card_desc_gpIcon">
                   <img src="components/carousel-card-principali/gpIconFinal.svg" alt="" />
                 </div>
+                <div class="main_card_desc_title">Commandos 3 - HD Remaster</div>
                 <div class="main_card_desc_secTitle">
                   Lotta sui campi di battaglia d'Europa
                 </div>
@@ -59,7 +62,7 @@
                 </div>
               </div>
             </div>
-            <div class="main_card" id="main_card_2">
+            <div class="main_card gallery-cell" id="main_card_2">
               <div class="main_card_desc">
                 <div class="main_card_desc_gpIcon">
                   <img src="components/carousel-card-principali/gpIconFinal.svg" alt="" />
@@ -71,7 +74,7 @@
                 </div>
               </div>
             </div>
-            <div class="main_card" id="main_card_3">
+            <div class="main_card gallery-cell" id="main_card_3">
               <div class="main_card_desc">
                 <div class="main_card_desc_gpIcon">
                   <img src="components/carousel-card-principali/gpIconFinal.svg" alt="" />
@@ -85,7 +88,7 @@
                 </div>
               </div>
             </div>
-            <div class="main_card" id="main_card_4">
+            <div class="main_card gallery-cell" id="main_card_4">
               <div class="main_card_desc">
                 <div class="main_card_desc_gpIcon">
                   <img src="components/carousel-card-principali/gpIconFinal.svg" alt="" />
@@ -99,7 +102,7 @@
                 </div>
               </div>
             </div>
-            <div class="main_card" id="main_card_5">
+            <div class="main_card gallery-cell" id="main_card_5">
               <div class="main_card_desc">
                 <div class="main_card_desc_gpIcon">
                   <img src="components/carousel-card-principali/gpIconFinal.svg" alt="" />
@@ -113,7 +116,7 @@
                 </div>
               </div>
             </div>
-            <div class="main_card" id="main_card_6">
+            <div class="main_card gallery-cell" id="main_card_6">
               <div class="main_card_desc">
                 <div class="main_card_desc_gpIcon">
                   <img src="components/carousel-card-principali/gpIconFinal.svg" alt="" />
@@ -127,7 +130,7 @@
                 </div>
               </div>
             </div>
-            <div class="main_card" id="main_card_7">
+            <div class="main_card gallery-cell" id="main_card_7">
               <div class="main_card_desc">
                 <div class="main_card_desc_gpIcon">
                   <img src="components/carousel-card-principali/gpIconFinal.svg" alt="" />
@@ -943,6 +946,8 @@
           <a href="" class="footer_base_link">© Microsoft 2023</a>
         </div>
       </div>
+
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 </html>

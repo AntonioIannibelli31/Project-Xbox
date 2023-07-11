@@ -24,6 +24,9 @@
   background-repeat: no-repeat;
   height: auto;
 }
+.main_gamePage_section .nav_container {
+  padding: 20px 40px;
+}
 .main_gamePage_section .gameTitle_container .headerGioco {
   padding: 0;
   padding: 0 3vw;
@@ -185,4 +188,6 @@
   .gameTitle_container .headerGioco {
     padding: 0 0px;
   }
-}/*# sourceMappingURL=game.css.map */
+}
+
+/*# sourceMappingURL=game.css.map */
