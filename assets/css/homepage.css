@@ -6,7 +6,7 @@ div .conteiner1 .container-first-section .top_section_content {
   z-index: 9999;
   left: 0;
   right: 0;
-  background-image: url(../img/wpBlur.png);
+  background-image: url(../img/wp.jpg);
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -23,12 +23,7 @@ div .conteiner1 .container-first-section .top_section_content .nav_container {
   padding-top: 25px;
   padding-bottom: 20px;
 }
-div
-  .conteiner1
-  .container-first-section
-  .top_section_content
-  .nav_container
-  .navbar_right {
+div .conteiner1 .container-first-section .top_section_content .nav_container .navbar_right {
   display: flex;
   gap: 10px;
 }
@@ -41,12 +36,10 @@ div .conteiner1 .cloud-container {
 div .conteiner1 .cloud-container .intestazione-sezione-cloud {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 15px;
+  padding-top: 20px;
 }
-div
-  .conteiner1
-  .cloud-container
-  .intestazione-sezione-cloud
-  .titolo-sezione-cloud {
+div .conteiner1 .cloud-container .intestazione-sezione-cloud .titolo-sezione-cloud {
   font-size: 25px;
 }
 div .container2 {
@@ -61,32 +54,25 @@ div .container2 .containerGreen .logo-gamepass {
   display: flex;
   justify-content: center;
 }
-div
-  .container2
-  .containerGreen
-  .aggiunti-recente-container
-  .intestazione-sezione-recenti {
+div .container2 .containerGreen .aggiunti-recente-container .intestazione-sezione-recenti {
   display: flex;
   justify-content: space-between;
+  padding-top: 20px;
 }
-div
-  .container2
-  .containerGreen
-  .aggiunti-recente-container
-  .intestazione-sezione-recenti
-  .titolo-sezione-recenti {
+div .container2 .containerGreen .aggiunti-recente-container .intestazione-sezione-recenti .titolo-sezione-recenti {
   font-size: 25px;
+  padding-bottom: 15px;
 }
 div .container2 .containerBlack {
   background-color: #1a1b1e;
   padding-left: 4%;
 }
-div
-  .container2
-  .containerBlack
-  .prestoNonDisponibile
-  .titolo-sezione-nondisponibile {
+div .container2 .containerBlack .prestoNonDisponibile .titolo-sezione-nondisponibile {
   font-size: 25px;
+  padding-bottom: 5px;
+}
+div .container2 .containerBlack .generi .etichetta-generi {
+  padding-bottom: 10px;
 }
 div .container2 .containerBlack .generi .lista-generi {
   padding-right: 4%;
@@ -94,13 +80,10 @@ div .container2 .containerBlack .generi .lista-generi {
 div .container2 .containerBlack .tuttiGiochi .intestazione-sezione-giochi {
   display: flex;
   justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
-div
-  .container2
-  .containerBlack
-  .tuttiGiochi
-  .intestazione-sezione-giochi
-  .titolo-sezione-giochi {
+div .container2 .containerBlack .tuttiGiochi .intestazione-sezione-giochi .titolo-sezione-giochi {
   font-size: 25px;
 }
 
@@ -121,7 +104,8 @@ div
     gap: 5px;
   }
   .generi .lista-generi .genere {
-    width: 23%;
+    width: calc(23% - 1px);
+    padding: 5px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -135,21 +119,40 @@ div
     width: 22%;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 360px) {
   .navbar_right .button_accedi {
     display: none;
   }
   .generi .lista-generi .genere {
-    width: 28%;
+    width: calc(50% - 15px);
+    padding: 10px;
+    font-weight: unset;
   }
   .tuttiGiochi {
     margin: 0;
   }
   .tuttiGiochi .allGames {
-    grid-template-columns: repeat(3, 140px);
-    grid-template-rows: repeat(8, 160px);
-    gap: 15px;
-    padding-left: 0;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(4, 150px);
+    padding-left: 8px;
+  }
+  .tuttiGiochi .allGames .cardContainer #card9,
+  .tuttiGiochi .allGames .cardContainer #card10,
+  .tuttiGiochi .allGames .cardContainer #card11,
+  .tuttiGiochi .allGames .cardContainer #card12,
+  .tuttiGiochi .allGames .cardContainer #card13,
+  .tuttiGiochi .allGames .cardContainer #card14,
+  .tuttiGiochi .allGames .cardContainer #card15,
+  .tuttiGiochi .allGames .cardContainer #card16,
+  .tuttiGiochi .allGames .cardContainer #card17,
+  .tuttiGiochi .allGames .cardContainer #card18,
+  .tuttiGiochi .allGames .cardContainer #card19,
+  .tuttiGiochi .allGames .cardContainer #card20,
+  .tuttiGiochi .allGames .cardContainer #card21,
+  .tuttiGiochi .allGames .cardContainer #card22,
+  .tuttiGiochi .allGames .cardContainer #card23,
+  .tuttiGiochi .allGames .cardContainer #card24 {
+    display: none;
   }
 }
 

@@ -15,20 +15,25 @@ a {
 }
 
 .imgNonDisponibile {
-  display: flex;
+  /* display: flex; */
   align-items: flex-end;
   margin: 0;
-  overflow-x: scroll;
-  overflow-y: unset;
+}
+.cards {
+  min-height: 180px;
 }
 
 ol {
   list-style: none;
-  display: flex;
-  align-items: flex-end;
+  /* display: flex; */
+  /* align-items: flex-end; */
   gap: 2rem;
 }
-
+ol .flickity-page-dots {
+  display: none;
+  justify-content: center;
+  bottom: 0px;
+}
 ol > li > .gamepass {
   align-items: flex-end;
 }

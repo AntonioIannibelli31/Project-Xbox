@@ -37,6 +37,8 @@ div {
       .intestazione-sezione-cloud {
         display: flex;
         justify-content: space-between;
+        padding-bottom: 15px;
+        padding-top: 20px;
         .titolo-sezione-cloud {
           font-size: 25px;
         }
@@ -58,8 +60,10 @@ div {
         .intestazione-sezione-recenti {
           display: flex;
           justify-content: space-between;
+          padding-top: 20px;
           .titolo-sezione-recenti {
             font-size: 25px;
+            padding-bottom: 15px;
           }
         }
       }
@@ -71,18 +75,23 @@ div {
       .prestoNonDisponibile {
         .titolo-sezione-nondisponibile {
           font-size: 25px;
+          padding-bottom: 5px;
         }
       }
       .generi {
+        .etichetta-generi {
+          padding-bottom: 10px;
+        }
         .lista-generi {
           padding-right: 4%;
         }
       }
       .tuttiGiochi {
-        // padding-right: 4%;
         .intestazione-sezione-giochi {
           display: flex;
           justify-content: space-between;
+          padding-top: 10px;
+          padding-bottom: 20px;
           .titolo-sezione-giochi {
             font-size: 25px;
           }
@@ -118,7 +127,8 @@ div {
   .generi {
     .lista-generi {
       .genere {
-        width: 23%;
+        width: calc(23% - 1px);
+        padding: 5px;
       }
     }
   }
@@ -141,7 +151,7 @@ div {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 360px) {
   .navbar_right {
     .button_accedi {
       display: none;
@@ -150,17 +160,38 @@ div {
   .generi {
     .lista-generi {
       .genere {
-        width: 28%;
+        width: calc(50% - 15px);
+        padding: 10px;
+        font-weight: unset;
       }
     }
   }
   .tuttiGiochi {
     margin: 0;
     .allGames {
-      grid-template-columns: repeat(3, 140px);
-      grid-template-rows: repeat(8, 160px);
-      gap: 15px;
-      padding-left: 0;
+      grid-template-columns: repeat(2, 150px);
+      grid-template-rows: repeat(4, 150px);
+      padding-left: 8px;
+      .cardContainer {
+        #card9,
+        #card10,
+        #card11,
+        #card12,
+        #card13,
+        #card14,
+        #card15,
+        #card16,
+        #card17,
+        #card18,
+        #card19,
+        #card20,
+        #card21,
+        #card22,
+        #card23,
+        #card24 {
+          display: none;
+        }
+      }
     }
   }
 }
